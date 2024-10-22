@@ -2,7 +2,12 @@
 
 DateTime CurrentTime = DateTime.Now;
 
-Console.WriteLine("Hima jamy [{0}]e", CurrentTime.Hour);
+if (CurrentTime.Day == 1){
+    Console.WriteLine("Hima jamy [{0}]e", CurrentTime.Hour);
+    Console.WriteLine();
+}
+
+
 
 //#2
 
@@ -14,7 +19,7 @@ for (int i = 100; i > 0; i--)
 }
 
 Console.WriteLine();
-
+Console.WriteLine();
 //2-rd dzevy
 
 int Num = 100;
@@ -26,7 +31,7 @@ for (int i = 0; i < 100; i++)
 }
 
 Console.WriteLine();
-
+Console.WriteLine();
 //3-rd dzevy
 
 Num = 100;
