@@ -42,6 +42,7 @@ Console.WriteLine();
 //#3
 
 string UserName = "";
+string option = "";
 int UserAge = 0;
 bool log = false;
 
@@ -49,17 +50,24 @@ bool log = false;
 Console.WriteLine("------------------------------");
 Console.WriteLine("Cragric Ogtveluc Araj Grancveq");
 Console.WriteLine();
-Console.WriteLine("         [0] exit");
+Console.WriteLine("    [0] exit  [any] continue");
 Console.WriteLine();
 
 do
 {
+    option = Console.ReadLine();
+
+    if (option == "0"){
+        break;
+    }
+    
     Console.Write("User Name: ");
     UserName = Console.ReadLine();
     Console.Write("Age: ");
     UserAge = Int32.Parse(Console.ReadLine());
     Console.WriteLine();
 
+    
     if (UserAge >= 18)
     {
         Console.WriteLine($"Bari galust {UserName}, duq nsheciq vor dzer tariqy {UserAge}e");
